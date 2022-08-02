@@ -1,0 +1,352 @@
+@font-face {
+    font-family: 'tenebras';
+    src: url('../Recursos/Tipografia/webfontkit-20220723-034645/tenebras-trial-webfont.woff2') format('woff2'),
+         url('../Recursos/Tipografia/webfontkit-20220723-034645/tenebras-trial-webfont.woff') format('woff');    
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bebas-neue';
+    src: url('../Recursos/Tipografia/bebas-neue/BebasNeue-Regular.woff2') format('woff2'),
+         url('../Recursos/Tipografia/bebas-neue/BebasNeue-Regular.woff') format('woff');    
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: bebas-neue;
+}
+
+.home{
+    position: relative;
+    min-height: 100vh;
+    align-items: center;
+    display: flex;
+    padding: 100px;
+    transition: 0.2s;
+    overflow-x: hidden;
+}
+
+.home__header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    z-index: 2;
+}
+
+.navegador{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navegador__titulo{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.navegador__titulo:hover{
+    color: rgb(114, 114, 114);
+}
+
+.navegador__h1{    
+   font-family: tenebras;
+   font-size: 2.2rem;
+}
+
+.navegador__lista{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.navegador__li{
+    margin-left: 15px;
+}
+
+.navegador__enlace{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.3rem;
+}
+
+.navegador__enlace:hover{
+    color: rgb(114, 114, 114);
+}
+
+.home__content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    z-index: 2;
+}
+
+.home__text{
+     display: flex;
+     flex-direction: column;
+     max-width: 600px;
+     padding-right: 20px;
+}
+
+.home__titulo{
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.home__parrafo{
+    margin-top: 20px;
+    letter-spacing: 0.5px;
+}
+
+.home__boton{
+    display: inline-block;
+    text-decoration: none;
+    background: #000;
+    padding: 10px;
+    color: #fff;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    width: 100px;
+    text-align: center;
+    box-shadow: 2px 2px 5px #0e0e0e,
+    -1px -1px 2px #5c5c5c;
+}
+
+.home__boton:hover{
+    background: rgb(114, 114, 114);
+}
+
+.home__redes{
+    position: absolute;
+    bottom: 40px;
+    left: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    z-index: 2;
+}
+
+.home__listaRedes{
+}
+
+.home__enlacesRedes{
+    padding: 5px;
+    background: #000;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+    box-shadow: 2px 2px 5px #0e0e0e,
+    -1px -1px 2px #5c5c5c;
+}
+
+.home__enlacesRedes:hover{
+    transform: translateY(-15px);
+    background: rgb(114, 114, 114);
+}
+
+
+.home__icoRedes{
+    filter: invert(1);
+    transform: scale(0.5);
+}
+
+/* Slider General*/
+
+.swiper{
+  margin: 0 !important;
+  overflow: visible !important;
+}
+
+.home__slider{
+  max-width: 500px;
+  display: flex;
+}
+.swiper-wrapper{
+  max-width: 100%;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 180px;
+  height: 460px;
+  display: flex;
+}
+
+/*Fondo*/
+.mySwiper{
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.mySwiper .swiper-slide div {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.image1{
+  background: linear-gradient(0deg, rgba(38,38,38,1) 0%, rgba(78,78,78,1) 24%, rgba(158,158,158,1) 44%, rgba(214,214,214,1) 63%, rgba(255,255,255,1) 100%);
+}
+.image2{
+  background: linear-gradient(135deg, hsla(31, 90%, 76%, 1) 0%, hsla(302, 82%, 76%, 1) 100%);
+}
+.image3{
+  background: linear-gradient(360deg, hsla(247, 23%, 40%, 1) 30%, hsla(42, 100%, 66%, 1) 100%);
+}
+.image4{
+  background: linear-gradient(135deg, hsla(141, 54%, 86%, 1) 0%, hsla(333, 73%, 85%, 1) 50%, hsla(211, 58%, 79%, 1) 100%);
+}
+.image5{
+  background: linear-gradient(180deg, hsla(54, 50%, 28%, 1) 0%, hsla(48, 22%, 78%, 1) 70%);
+}
+.image6{
+  background: linear-gradient(360deg, hsla(212, 13%, 41%, 1) 20%, hsla(3, 100%, 73%, 1) 100%);
+}
+.image7{
+  background: linear-gradient(270deg, hsla(192, 80%, 51%, 1) 0%, hsla(355, 85%, 63%, 1) 70%);
+}
+.image8{
+  background: linear-gradient(180deg, hsla(260, 28%, 53%, 1) 0%, hsla(170, 42%, 71%, 1) 70%);
+}
+.image9{
+  background: linear-gradient(45deg, hsla(228, 17%, 53%, 1) 0%, hsla(229, 28%, 88%, 1) 100%);
+}
+.image10{
+  background: linear-gradient(90deg, hsla(148, 89%, 78%, 1) 20%, hsla(210, 81%, 22%, 1) 100%);
+}
+
+/* Slider Home*/
+
+.mySwiper2 {
+  position: relative;
+  margin-top: -80px;
+  display: flex;
+  width: 400px;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.mySwiper2 .swiper-slide img{
+  width: 300px;
+  height: 400px;
+  margin-top: -80px;
+}
+
+.mySwiper2 .swiper {
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.mySwiper2 .swiper-wrapper{
+  max-width: 100%;
+}
+
+.mySwiper2 .swiper-slide {
+  width: 160px;
+  height: 440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right{
+  background: none !important;
+}
+
+@media (max-width: 960px) {
+
+  .home{
+    padding: 100px 20px;
+  }
+  .home__header{
+    padding: 20px 20px;
+    z-index: 4;
+  }
+
+  .navegador__lista{
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .navegador__lista.active{
+    visibility: visible;
+        opacity: 1;
+        position: absolute;
+        background: #000000ef;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        z-index: 5;
+        justify-content: center;
+        align-items: center;
+  }
+
+  .navegador__icoNav{
+    background: url('../Recursos/img/menu.png');
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    background-size: 30px;
+    z-index: 6;
+    filter: invert(1);
+  }
+
+  .navegador__icoNav.active{
+    background: url('../Recursos/img/close.png') no-repeat;
+    width: 40px;
+    height: 40px;
+    background-size: 30px;
+    filter: invert(0);
+  }
+
+  .navegador__li{
+    margin-top: 10px;
+  }
+  .navegador__enlace{
+    font-size: 1.8rem;
+    padding: 10px;
+    color: #fff;
+  }
+
+.home__content{
+  display: flex;
+  flex-direction: column;
+ }
+
+ .home__redes{
+  right: 50%;
+  left: 50%;
+}
+
+.mySwiper2{
+  margin-top: 0;
+}
+}
